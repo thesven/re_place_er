@@ -7,7 +7,7 @@ re_place_er is a simple tool for replacing tokens in a string with their corresp
 You can install Token Replacer using npm:
 
 ```bash
-npm install @thesven/re_place_er
+npm install @mikesven/re_place_er
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ import {
   re_place_er,
   ReplacerOptions,
   Replacement,
-} from "@thesven/re_place_er";
+} from "@mikesven/re_place_er";
 
 const source = "Hello, {{name}}! Your age is {{age}}.";
 const replacements: Replacement[] = [
