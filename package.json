@@ -1,5 +1,5 @@
 {
-  "name": "@thesven/re_place_er",
+  "name": "@mikesven/re_place_er",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -19,5 +19,9 @@
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scope": "@mikesven"
 }
