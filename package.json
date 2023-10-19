@@ -1,6 +1,6 @@
 {
   "name": "@mikesven/re_place_er",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -23,5 +23,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "scope": "@mikesven"
+  "scope": "@mikesven",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thesven/re_place_er.git"
+  }
 }
