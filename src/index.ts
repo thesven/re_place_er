@@ -34,9 +34,11 @@ export const re_place_er = (options: ReplacerOptions): string[] => {
   replacements.forEach((replacement) => {
     let stringWithTokens = source;
     Object.keys(replacement).forEach((key) => {
-      const token = `${openToken}${key}${endToken}`;
-      const value = replacement[key].toString();
-      stringWithTokens = stringWithTokens.replace(token, value);
+      const token: string = `${openToken}${key}${endToken}`;
+      const value: string | number | boolean | undefined = replacement[key];
+      if (value !== undefined) {
+        stringWithTokens = stringWithTokens.replace(token, value.toString());
+      }
     });
     results.push(stringWithTokens);
   });

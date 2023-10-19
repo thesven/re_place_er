@@ -1,16 +1,22 @@
 {
   "name": "@thesven/re_place_er",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "release": "pnpm run build && changeset publish",
+    "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Michael Svendsen",
+  "license": "Unlicense",
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "tsc": "^2.0.4",
+    "tsup": "^7.2.0",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
   }
